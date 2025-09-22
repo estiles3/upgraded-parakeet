@@ -5,17 +5,17 @@ class Solution:
         previous = 0
         localmax = 0
         for x in range(len(nums)):
-            if nums[x] < left:
-                value+=1
             if localmax < left:
                 localmax = nums[x]
-            if (nums[x] > right):
+            if nums[x] < left:
+                value+=1
+            elif (nums[x] > right):
                 previous = x+1
                 localmax = 0
                 value = 0
-            if left <= nums[x] <= right:
+            else:
                 value = 0
             if (left <= localmax <= right):
-                wins += len(nums[previous:x+1]) - value
+                wins += x+ 1 -previous  - value
         return wins
         
