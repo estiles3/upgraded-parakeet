@@ -4,6 +4,7 @@ __pycache__/
 *$py.class
 
 node_modules
+boomerang-interview-fullstack-main
 
 # C extensions
 *.so
