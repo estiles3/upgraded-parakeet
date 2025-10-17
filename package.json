@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "eslint": "^9.36.0",
+    "node.js": "^0.0.1-security",
+    "prettier": "^3.6.2"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.2"
+  }
+}
